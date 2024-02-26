@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uber_clone/view/my_flutter_app_icons.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -24,19 +25,24 @@ class HomeScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(30)),
                 child: Row(
                   children: [
-                    Icon(Icons.search_sharp),
+                    Icon(Icons.search),
+                    SizedBox(width: 10),
                     Text(
                       "Where to?",
-                      style: TextStyle(fontFamily: "UberMove"),
+                      style: TextStyle(
+                          fontFamily: "UberMove",
+                          fontSize: 20,
+                          fontWeight: FontWeight.w600),
                     ),
                     Spacer(),
                     ElevatedButton.icon(
                         onPressed: () {},
-                        icon: Icon(Icons.more_time_outlined),
+                        icon: Icon(MyFlutterApp.icon_time),
                         label: Row(
                           children: [
                             Text("Now",
-                                style: TextStyle(fontFamily: "UberMove")),
+                                style: TextStyle(
+                                    fontFamily: "UberMove", fontSize: 15)),
                             Icon(Icons.arrow_drop_down_sharp)
                           ],
                         ))
