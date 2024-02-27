@@ -1,5 +1,7 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
-import 'package:uber_clone/view/my_flutter_app_icons.dart';
+import 'package:uber_clone/view/home_screen/home_widgets/search_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -17,38 +19,7 @@ class HomeScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-          children: [
-            Container(
-                padding: EdgeInsets.symmetric(horizontal: 15, vertical: 5),
-                decoration: BoxDecoration(
-                    color: Color(0xffe8e8e8),
-                    borderRadius: BorderRadius.circular(30)),
-                child: Row(
-                  children: [
-                    Icon(Icons.search),
-                    SizedBox(width: 10),
-                    Text(
-                      "Where to?",
-                      style: TextStyle(
-                          fontFamily: "UberMove",
-                          fontSize: 20,
-                          fontWeight: FontWeight.w600),
-                    ),
-                    Spacer(),
-                    ElevatedButton.icon(
-                        onPressed: () {},
-                        icon: Icon(MyFlutterApp.icon_time),
-                        label: Row(
-                          children: [
-                            Text("Now",
-                                style: TextStyle(
-                                    fontFamily: "UberMove", fontSize: 15)),
-                            Icon(Icons.arrow_drop_down_sharp)
-                          ],
-                        ))
-                  ],
-                ))
-          ],
+          children: [SearchWidget()],
         ),
       ),
     );
