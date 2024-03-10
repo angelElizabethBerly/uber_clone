@@ -2,8 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:uber_clone/core/constants/color_constant.dart';
+import 'package:uber_clone/view/activity_screen/activity_screen.dart';
 import 'package:uber_clone/view/home_screen/home_screen.dart';
 import 'package:uber_clone/view/my_flutter_app_icons.dart';
+import 'package:uber_clone/view/services_screen/services_screen.dart';
 
 class BottomNavigationScreen extends StatefulWidget {
   const BottomNavigationScreen({super.key});
@@ -16,8 +18,8 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   int selectedIndex = 0;
   List screenList = [
     HomeScreen(),
-    Container(color: Colors.yellow),
-    Container(color: Colors.teal),
+    ServicesScreen(),
+    ActivityScreen(),
     Container(color: Colors.red)
   ];
   @override

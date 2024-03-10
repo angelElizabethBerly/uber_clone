@@ -3,4 +3,12 @@ class ImageConstants {
   static const String uberReservePng = "assets/images/uberreservepng.png";
   static const String uberIntercityPng = "assets/images/uberintercitypng.png";
   static const String uberRentalsPng = "assets/images/uberrentals.png";
+
+  static List<String> suggestionBannerList = [
+    "assets/images/uberYouHaveMultiplePromos.jpg",
+    "assets/images/uberOutstationCabsonDemand.jpg",
+    "assets/images/uberReserveARideInAdvance.jpg",
+    "assets/images/uberGetThereTogether.jpg",
+    "assets/images/uberReadyLetsRoll.jpg"
+  ];
 }

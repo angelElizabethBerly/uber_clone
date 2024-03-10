@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:uber_clone/view/bottom_navigation_screen/bottom_navigation_screen.dart';
+import 'package:uber_clone/view/splash_screen/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: BottomNavigationScreen(),
+      home: SplashScreen(),
     );
   }
 }
