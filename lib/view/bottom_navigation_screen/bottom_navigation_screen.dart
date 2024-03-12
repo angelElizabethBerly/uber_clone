@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:uber_clone/core/constants/color_constant.dart';
+import 'package:uber_clone/view/account_screen/account_screen.dart';
 import 'package:uber_clone/view/activity_screen/activity_screen.dart';
 import 'package:uber_clone/view/home_screen/home_screen.dart';
 import 'package:uber_clone/view/my_flutter_app_icons.dart';
@@ -20,7 +21,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
     HomeScreen(),
     ServicesScreen(),
     ActivityScreen(),
-    Container(color: Colors.red)
+    AccountScreen()
   ];
   @override
   Widget build(BuildContext context) {
