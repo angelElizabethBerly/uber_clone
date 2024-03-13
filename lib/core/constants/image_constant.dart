@@ -4,6 +4,7 @@ class ImageConstants {
   static const String uberIntercityPng = "assets/images/uberintercitypng.png";
   static const String uberRentalsPng = "assets/images/uberrentals.png";
   static const String uberLastTripPng = "assets/images/uberLastLocation.jpeg";
+  static const String uberMPPng = "assets/images/uberMP.jpg";
 
   static List<String> suggestionBannerList = [
     "assets/images/uberYouHaveMultiplePromos.jpg",

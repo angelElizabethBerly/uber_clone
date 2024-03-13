@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:uber_clone/core/constants/color_constant.dart';
+import 'package:uber_clone/core/constants/image_constant.dart';
+import 'package:uber_clone/view/my_flutter_app_icons.dart';
 
 class AccountScreen extends StatefulWidget {
   const AccountScreen({super.key});
@@ -55,7 +57,7 @@ class _AccountScreenState extends State<AccountScreen> {
                   height: 100,
                   width: 110,
                   decoration: BoxDecoration(
-                      color: ColorConstant.op30Black,
+                      color: ColorConstant.op10Black,
                       borderRadius: BorderRadius.circular(10)),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -63,7 +65,7 @@ class _AccountScreenState extends State<AccountScreen> {
                       Icon(Icons.build_circle_outlined, size: 35),
                       Text("Help",
                           style:
-                              TextStyle(fontSize: 15, fontFamily: 'UberMove'))
+                              TextStyle(fontSize: 18, fontFamily: 'UberMove'))
                     ],
                   ),
                 ),
@@ -71,7 +73,7 @@ class _AccountScreenState extends State<AccountScreen> {
                   height: 100,
                   width: 110,
                   decoration: BoxDecoration(
-                      color: ColorConstant.op30Black,
+                      color: ColorConstant.op10Black,
                       borderRadius: BorderRadius.circular(10)),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -79,17 +81,40 @@ class _AccountScreenState extends State<AccountScreen> {
                       Icon(Icons.payment, size: 35),
                       Text("Payment",
                           style:
-                              TextStyle(fontSize: 15, fontFamily: 'UberMove'))
+                              TextStyle(fontSize: 18, fontFamily: 'UberMove'))
                     ],
                   ),
                 ),
                 Container(
-                    height: 100,
-                    width: 110,
-                    decoration: BoxDecoration(
-                        color: ColorConstant.op30Black,
-                        borderRadius: BorderRadius.circular(10))),
+                  height: 100,
+                  width: 110,
+                  decoration: BoxDecoration(
+                      color: ColorConstant.op10Black,
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.bookmark, size: 35),
+                      Text("Activity",
+                          style:
+                              TextStyle(fontSize: 18, fontFamily: 'UberMove'))
+                    ],
+                  ),
+                ),
               ],
+            ),
+            SizedBox(height: 30),
+            ListTile(
+              contentPadding: EdgeInsets.symmetric(horizontal: 10),
+              tileColor: ColorConstant.op10Black,
+              title: Text(
+                "You have multiple promos",
+                style: TextStyle(fontFamily: "UberMove", fontSize: 18),
+              ),
+              subtitle: Text(
+                "We'll automatically apply the one that saves you t",
+              ),
+              trailing: Image.asset(ImageConstants.uberMPPng),
             )
           ],
         ),
