@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Text("Uber",
               style: TextStyle(
                   fontFamily: "UberMove",
-                  fontSize: 50,
+                  fontSize: 60,
                   color: ColorConstant.primaryWhite))),
     );
   }

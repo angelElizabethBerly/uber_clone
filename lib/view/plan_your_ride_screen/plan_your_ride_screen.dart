@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:uber_clone/core/constants/color_constant.dart';
+import 'package:uber_clone/view/choose_a_ride_screen/choose_a_ride_screen.dart';
 import 'package:uber_clone/view/dummy_db.dart';
 import 'package:uber_clone/view/my_flutter_app_icons.dart';
 
@@ -171,27 +172,27 @@ class _PlanYourRideScreenState extends State<PlanYourRideScreen> {
           Column(
               children: List.generate(
                   DummyDB.planRideList.length,
-                  (index) => ListTile(
-                        leading: Icon(Icons.location_on),
-                        title: Text(
-                          DummyDB.planRideList[index]["location"],
-                          style: TextStyle(fontFamily: "UberMove"),
-                        ),
-                        subtitle: Text(
-                          DummyDB.planRideList[index]["address"],
-                          style:
-                              TextStyle(fontFamily: "UberMove", fontSize: 12),
+                  (index) => InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => ChooseARideScreen()));
+                        },
+                        child: ListTile(
+                          leading: Icon(Icons.location_on),
+                          title: Text(
+                            DummyDB.planRideList[index]["location"],
+                            style: TextStyle(fontFamily: "UberMove"),
+                          ),
+                          subtitle: Text(
+                            DummyDB.planRideList[index]["address"],
+                            style:
+                                TextStyle(fontFamily: "UberMove", fontSize: 12),
+                          ),
                         ),
                       )))
-        ]
-            // List.generate(
-            //     2,
-            //     (index) => ListTile(
-            //           leading: Icon(Icons.star),
-            //           title: Text("Saved places",
-            //               style: TextStyle(fontFamily: "UberMove")),
-            //         ))
-            ),
+        ]),
       ),
     );
   }

@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:uber_clone/core/constants/color_constant.dart';
 import 'package:uber_clone/core/constants/image_constant.dart';
