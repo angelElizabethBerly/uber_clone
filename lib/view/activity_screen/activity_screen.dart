@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:uber_clone/core/constants/color_constant.dart';
 import 'package:uber_clone/core/constants/image_constant.dart';
+import 'package:uber_clone/view/dummy_db.dart';
 
 class ActivityScreen extends StatelessWidget {
   const ActivityScreen({super.key});
@@ -77,12 +78,13 @@ class ActivityScreen extends StatelessWidget {
                   shrinkWrap: true,
                   itemBuilder: (context, index) {
                     return ListTile(
-                        title: Text("5th Floor",
+                        title: Text(DummyDB.activities[index].location,
                             style: TextStyle(
                                 fontFamily: "UberMove",
                                 fontSize: 15,
                                 fontWeight: FontWeight.w700)),
-                        subtitle: Text("Mar 10 . 7:46 PM \n₹272.00",
+                        subtitle: Text(
+                            "${DummyDB.activities[index].date} . ${DummyDB.activities[index].time} \n₹${DummyDB.activities[index].price}",
                             style: TextStyle(
                                 fontFamily: "UberMove",
                                 fontSize: 13,
@@ -93,22 +95,22 @@ class ActivityScreen extends StatelessWidget {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: ColorConstant.op10Black),
-                          child: Image.asset(ImageConstants.uberRidePng),
+                          child: Image.asset(DummyDB.activities[index].image),
                         ),
                         trailing: ElevatedButton.icon(
                             style: ButtonStyle(
                                 backgroundColor: MaterialStatePropertyAll(
                                     ColorConstant.op4Black)),
                             onPressed: () {},
-                            icon: Icon(Icons.refresh),
+                            icon: Icon(Icons.refresh, size: 20),
                             label: Text(
                               "Rebook",
                               style: TextStyle(
-                                  fontFamily: "UberMove", fontSize: 10),
+                                  fontFamily: "UberMove", fontSize: 13),
                             )));
                   },
                   separatorBuilder: (context, index) => Divider(),
-                  itemCount: 10)
+                  itemCount: DummyDB.activities.length)
             ]),
           ),
         ));

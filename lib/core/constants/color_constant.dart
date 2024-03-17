@@ -9,4 +9,5 @@ class ColorConstant {
   static const Color op4Black = Color(0xffeeeeee);
   static const Color primaryWhite = Color(0xffffffff);
   static const Color primaryGreen = Color(0xff3b864e);
+  static const Color primaryBlue = Colors.blue;
 }
