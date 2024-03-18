@@ -202,6 +202,35 @@ class DummyDB {
     {"location": "Hill Palace Museum", "address": "Tripunithura, Kerala"},
     {"location": "Cherai Beach", "address": "Vypin Island, Kochi, Kerala"}
   ];
+
+  static List chooseRideList = [
+    {
+      "image": ImageConstants.autoIconPng,
+      "ride": "Uber Auto",
+      "cost": "128.78"
+    },
+    {"image": ImageConstants.uberRidePng, "ride": "Uber Go", "cost": "159.70"},
+    {
+      "image": ImageConstants.uberIntercityPng,
+      "ride": "Uber Go Sedan",
+      "cost": "181.89"
+    },
+    {
+      "image": ImageConstants.uberRidePng,
+      "ride": "Uber Premier",
+      "cost": "128.20"
+    },
+    {
+      "image": ImageConstants.uberRentalsPng,
+      "ride": "Go Rentals",
+      "cost": "281.77"
+    },
+    {
+      "image": ImageConstants.uberIntercityPng,
+      "ride": "Uber XL",
+      "cost": "282.25"
+    },
+  ];
 }
 
 class ActivityModel {

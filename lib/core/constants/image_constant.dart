@@ -25,7 +25,7 @@ class ImageConstants {
       "assets/images/uberRentalsCartoon.jpg";
   static const String uberTravelIntercityPng =
       "assets/images/uberTravelIntercity.jpg";
-  static const String mapPng = "assets/images/map.png";
+  static const String mapPng = "assets/images/map.jpg";
   static const String autoIconPng = "assets/images/uberAutoIcon.png";
 
   static List<String> suggestionBannerList = [
